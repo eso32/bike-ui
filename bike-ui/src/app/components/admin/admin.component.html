@@ -1,0 +1,11 @@
+<p>
+  admin works!
+</p>
+<div>
+  <div 
+  style="border: 1px solid black; margin-bottom: 5px;" 
+  *ngFor="let bike of bikes">
+  <a [routerLink]="['/admin/view', bike.id]">{{bike.id}} | {{bike.name}} | {{bike.price}}</a>
+</div>
+</div>
+<button (click)="saveBike()">Save bike</button>
